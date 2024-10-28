@@ -1,0 +1,221 @@
+
+EVENTS .CSV DATAFRAME
+----------------------
+
+Shape of the dataframe:
+(32, 15)
+First 5 rows of the dataframe:
+     type  year  country        host       start         end                              disabilities_included  countries  events  sports  participants_m  participants_f  participants                                         highlights                                         URL
+0  Summer  1960    Italy        Rome  18/09/1960  25/09/1960                                      Spinal injury       23.0   113.0       8             NaN             NaN         209.0  First Games with a disability held in same ven...        https://www.paralympic.org/rome-1960
+1  summer  1964    Japan       Tokyo  08/11/1964  12/11/1964                                      Spinal injury       21.0   143.0       9           195.0            71.0         266.0                     Weightlifting added as a sport       https://www.paralympic.org/tokyo-1964
+2  summer  1968   Israel    Tel Aviv  05/11/1968  14/11/1968                                      Spinal injury       29.0   188.0      10           578.0           196.0         774.0                        Lawn Bowls added as a sport    https://www.paralympic.org/tel-aviv-1968
+3  summer  1972  Germany  Heidelberg  02/08/1972  11/08/1972                                      Spinal injury       43.0   188.0      10           654.0           268.0         922.0  First quadraplegic competition added. Demonstr...  https://www.paralympic.org/heidelberg-1972
+4  summer  1976   Canada     Toronto  04/08/1976  12/08/1976  Spinal injury, Amputee, Vision Impairment, Les...       40.0   448.0      13          1000.0           271.0        1271.0  First use of specialised racing wheelchairs. V...     https://www.paralympic.org/toronto-1976
+Last 5 rows of the dataframe:
+      type  year country            host       start         end                              disabilities_included  countries  events  sports  participants_m  participants_f  participants                                         highlights                                             URL
+27  winter  2010  Canada       Vancouver  12/03/2010  21/03/2010  Spinal injury, Amputee, Vision Impairment, Cer...       44.0    64.0       5           381.0           121.0         502.0      Ticket sales exceeded 230,000, the most ever.       https://www.paralympic.org/vancouver-2010
+28  winter  2014  Russia           Sochi  07/03/2014  16/03/2014  Spinal injury, Amputee, Vision Impairment, Cer...       45.0    72.0       6           411.0           129.0         540.0  316,200 tickets were sold, the most ever for P...           https://www.paralympic.org/sochi-2014
+29  winter  2018   Korea     PyeongChang  09/03/2018  18/03/2018  Spinal injury, Amputee, Vision Impairment, Cer...       49.0    80.0       6           430.0           133.0         563.0  Record numbers of spectators (343,000), accred...     https://www.paralympic.org/pyeongchang-2018
+30  winter  2022   China         Beijing  04/03/2022  13/03/2022  Spinal injury, Amputee, Vision Impairment, Cer...       46.0    78.0       6           422.0           136.0         558.0  Record number of female Para athletes (136) to...         https://www.paralympic.org/beijing-2022
+31  winter  2026   Italy  Milano Cortina  06/03/2026  15/03/2026  Spinal injury, Amputee, Vision Impairment, Cer...        NaN    79.0       6             NaN             NaN           NaN                                                NaN  https://www.paralympic.org/milano-cortina-2026
+
+Column names:
+Index(['type', 'year', 'country', 'host', 'start', 'end',
+       'disabilities_included', 'countries', 'events', 'sports',
+       'participants_m', 'participants_f', 'participants', 'highlights',
+       'URL'],
+      dtype='object')
+
+Data types of the columns:
+type                      object
+year                       int64
+country                   object
+host                      object
+start                     object
+end                       object
+disabilities_included     object
+countries                float64
+events                   float64
+sports                     int64
+participants_m           float64
+participants_f           float64
+participants             float64
+highlights                object
+URL                       object
+dtype: object
+
+Summary statistics:
+              year   countries      events     sports  participants_m  participants_f  participants
+count    32.000000   30.000000   31.000000  32.000000       29.000000       29.000000     30.000000
+mean   1996.937500   66.133333  298.419355  11.312500     1208.482759      542.724138   1699.800000
+std      19.176494   51.782525  254.367814   7.213059     1055.205620      612.202400   1624.095067
+min    1960.000000   16.000000   53.000000   2.000000       39.000000       37.000000    129.000000
+25%    1983.000000   29.500000   79.500000   5.000000      328.000000       94.000000    416.000000
+50%    1997.000000   43.500000  143.000000   9.500000      578.000000      196.000000    668.500000
+75%    2012.500000   98.750000  523.500000  19.000000     2462.000000      790.000000   3199.250000
+max    2028.000000  169.000000  975.000000  22.000000     2883.000000     2016.000000   4567.000000
+Rows with missing values:
+      type  year country            host       start         end                              disabilities_included  countries  events  sports  participants_m  participants_f  participants                                         highlights                                             URL
+0   Summer  1960   Italy            Rome  18/09/1960  25/09/1960                                      Spinal injury       23.0   113.0       8             NaN             NaN         209.0  First Games with a disability held in same ven...            https://www.paralympic.org/rome-1960
+17  summer  2028     USA     Los Angeles  15/08/2028  27/08/2028  Spinal injury, Amputee, Vision Impairment, Cer...        NaN     NaN      22             NaN             NaN           NaN                                                NaN              https://www.paralympic.org/la-2028
+31  winter  2026   Italy  Milano Cortina  06/03/2026  15/03/2026  Spinal injury, Amputee, Vision Impairment, Cer...        NaN    79.0       6             NaN             NaN           NaN                                                NaN  https://www.paralympic.org/milano-cortina-2026
+
+Columns with missing values:
+type                     0
+year                     0
+country                  0
+host                     0
+start                    0
+end                      0
+disabilities_included    0
+countries                2
+events                   1
+sports                   0
+participants_m           3
+participants_f           3
+participants             2
+highlights               2
+URL                      0
+dtype: int64
+
+EVENTS .XLSX DATAFRAME
+----------------------
+
+Shape of the dataframe:
+(32, 15)
+First 5 rows of the dataframe:
+     type  year  country        host      start        end                              disabilities_included  countries  events  sports  participants_m  participants_f  participants                                         highlights                                         URL
+0  Summer  1960    Italy        Rome 1960-09-18 1960-09-25                                      Spinal injury       23.0   113.0       8             NaN             NaN         209.0  First Games with a disability held in same ven...        https://www.paralympic.org/rome-1960
+1  summer  1964    Japan       Tokyo 1964-11-08 1964-11-12                                      Spinal injury       21.0   143.0       9           195.0            71.0         266.0                     Weightlifting added as a sport       https://www.paralympic.org/tokyo-1964
+2  summer  1968   Israel    Tel Aviv 1968-11-05 1968-11-14                                      Spinal injury       29.0   188.0      10           578.0           196.0         774.0                        Lawn Bowls added as a sport    https://www.paralympic.org/tel-aviv-1968
+3  summer  1972  Germany  Heidelberg 1972-08-02 1972-08-11                                      Spinal injury       43.0   188.0      10           654.0           268.0         922.0  First quadraplegic competition added. Demonstr...  https://www.paralympic.org/heidelberg-1972
+4  summer  1976   Canada     Toronto 1976-08-04 1976-08-12  Spinal injury, Amputee, Vision Impairment, Les...       40.0   448.0      13          1000.0           271.0        1271.0  First use of specialised racing wheelchairs. V...     https://www.paralympic.org/toronto-1976
+Last 5 rows of the dataframe:
+      type  year country            host      start        end                              disabilities_included  countries  events  sports  participants_m  participants_f  participants                                         highlights                                             URL
+27  winter  2010  Canada       Vancouver 2010-03-12 2010-03-21  Spinal injury, Amputee, Vision Impairment, Cer...       44.0    64.0       5           381.0           121.0         502.0      Ticket sales exceeded 230,000, the most ever.       https://www.paralympic.org/vancouver-2010
+28  winter  2014  Russia           Sochi 2014-03-07 2014-03-16  Spinal injury, Amputee, Vision Impairment, Cer...       45.0    72.0       6           411.0           129.0         540.0  316,200 tickets were sold, the most ever for P...           https://www.paralympic.org/sochi-2014
+29  winter  2018   Korea     PyeongChang 2018-03-09 2018-03-18  Spinal injury, Amputee, Vision Impairment, Cer...       49.0    80.0       6           430.0           133.0         563.0  Record numbers of spectators (343,000), accred...     https://www.paralympic.org/pyeongchang-2018
+30  winter  2022   China         Beijing 2022-03-04 2022-03-13  Spinal injury, Amputee, Vision Impairment, Cer...       46.0    78.0       6           422.0           136.0         558.0  Record number of female Para athletes (136) to...         https://www.paralympic.org/beijing-2022
+31  winter  2026   Italy  Milano Cortina 2026-03-06 2026-03-15  Spinal injury, Amputee, Vision Impairment, Cer...        NaN    79.0       6             NaN             NaN           NaN                                                NaN  https://www.paralympic.org/milano-cortina-2026
+
+Column names:
+Index(['type', 'year', 'country', 'host', 'start', 'end',
+       'disabilities_included', 'countries', 'events', 'sports',
+       'participants_m', 'participants_f', 'participants', 'highlights',
+       'URL'],
+      dtype='object')
+
+Data types of the columns:
+type                             object
+year                              int64
+country                          object
+host                             object
+start                    datetime64[ns]
+end                      datetime64[ns]
+disabilities_included            object
+countries                       float64
+events                          float64
+sports                            int64
+participants_m                  float64
+participants_f                  float64
+participants                    float64
+highlights                       object
+URL                              object
+dtype: object
+
+Summary statistics:
+              year                start                  end   countries      events     sports  participants_m  participants_f  participants
+count    32.000000                   32                   32   30.000000   31.000000  32.000000       29.000000       29.000000     30.000000
+mean   1996.937500  1997-06-01 01:30:00  1997-06-11 03:00:00   66.133333  298.419355  11.312500     1208.482759      542.724138   1699.800000
+min    1960.000000  1960-09-18 00:00:00  1960-09-25 00:00:00   16.000000   53.000000   2.000000       39.000000       37.000000    129.000000
+25%    1983.000000  1983-02-23 12:00:00  1983-03-02 06:00:00   29.500000   79.500000   5.000000      328.000000       94.000000    416.000000
+50%    1997.000000  1997-05-27 00:00:00  1997-06-05 00:00:00   43.500000  143.000000   9.500000      578.000000      196.000000    668.500000
+75%    2012.500000  2013-01-14 18:00:00  2013-01-25 06:00:00   98.750000  523.500000  19.000000     2462.000000      790.000000   3199.250000
+max    2028.000000  2028-08-15 00:00:00  2028-08-27 00:00:00  169.000000  975.000000  22.000000     2883.000000     2016.000000   4567.000000
+std      19.176494                  NaN                  NaN   51.782525  254.367814   7.213059     1055.205620      612.202400   1624.095067
+Rows with missing values:
+      type  year country            host      start        end                              disabilities_included  countries  events  sports  participants_m  participants_f  participants                                         highlights                                             URL
+0   Summer  1960   Italy            Rome 1960-09-18 1960-09-25                                      Spinal injury       23.0   113.0       8             NaN             NaN         209.0  First Games with a disability held in same ven...            https://www.paralympic.org/rome-1960
+17  summer  2028     USA     Los Angeles 2028-08-15 2028-08-27  Spinal injury, Amputee, Vision Impairment, Cer...        NaN     NaN      22             NaN             NaN           NaN                                                NaN              https://www.paralympic.org/la-2028
+31  winter  2026   Italy  Milano Cortina 2026-03-06 2026-03-15  Spinal injury, Amputee, Vision Impairment, Cer...        NaN    79.0       6             NaN             NaN           NaN                                                NaN  https://www.paralympic.org/milano-cortina-2026
+
+Columns with missing values:
+type                     0
+year                     0
+country                  0
+host                     0
+start                    0
+end                      0
+disabilities_included    0
+countries                2
+events                   1
+sports                   0
+participants_m           3
+participants_f           3
+participants             2
+highlights               2
+URL                      0
+dtype: int64
+
+MEDAL STANDINGS .XLSX DATAFRAME
+----------------------
+
+Shape of the dataframe:
+(817, 9)
+First 5 rows of the dataframe:
+    Location  Year  Rank                      Team  NPC  Gold  Silver  Bronze  Total
+0  Barcelona  1992   1.0  United States of America  USA    75      52      48    175
+1  Barcelona  1992   2.0                   Germany  GER    61      51      59    171
+2  Barcelona  1992   3.0             Great Britain  GBR    40      47      41    128
+3  Barcelona  1992   4.0                    France  FRA    36      36      34    106
+4  Barcelona  1992   5.0                     Spain  ESP    34      31      42    107
+Last 5 rows of the dataframe:
+    Location  Year  Rank         Team  NPC  Gold  Silver  Bronze  Total
+812  Beijing  2022  15.0  New Zealand  NZL     1       1       2      4
+813  Beijing  2022  16.0  Netherlands  NED     0       3       1      4
+814  Beijing  2022  17.0    Australia  AUS     0       0       1      1
+815  Beijing  2022  17.0   Kazakhstan  KAZ     0       0       1      1
+816  Beijing  2022  17.0  Switzerland  SUI     0       0       1      1
+
+Column names:
+Index(['Location', 'Year', 'Rank', 'Team', 'NPC', 'Gold', 'Silver', 'Bronze',
+       'Total'],
+      dtype='object')
+
+Data types of the columns:
+Location     object
+Year          int64
+Rank        float64
+Team         object
+NPC          object
+Gold          int64
+Silver        int64
+Bronze        int64
+Total         int64
+dtype: object
+
+Summary statistics:
+              Year        Rank        Gold      Silver      Bronze       Total
+count   817.000000  816.000000  817.000000  817.000000  817.000000  817.000000
+mean   2005.547124   27.643382    6.386781    6.353733    6.549572   19.290086
+std      10.686970   19.810613   11.366972   10.063084    9.618472   30.031647
+min    1976.000000    1.000000    0.000000    0.000000    0.000000    1.000000
+25%    1996.000000   10.000000    1.000000    1.000000    1.000000    3.000000
+50%    2006.000000   22.000000    3.000000    3.000000    3.000000    9.000000
+75%    2016.000000   46.000000    7.000000    7.000000    7.000000   22.000000
+max    2022.000000   69.000000  107.000000   81.000000   65.000000  239.000000
+Rows with missing values:
+        Location  Year  Rank                  Team  NPC  Gold  Silver  Bronze  Total
+797  Pyeongchang  2018   NaN  Neutral Para Athlete  NPA     8      10       6     24
+
+Columns with missing values:
+Location    0
+Year        0
+Rank        1
+Team        0
+NPC         0
+Gold        0
+Silver      0
+Bronze      0
+Total       0
+dtype: int64
